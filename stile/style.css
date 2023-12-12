@@ -25,6 +25,10 @@ img {
     display: block;
 }
 
+p {
+    margin: 0;
+}
+
 /* Fine Generics */
 
 /* Utils */
@@ -101,7 +105,6 @@ header {
 }
 
 
-
 /* fine sidebar */
 
 
@@ -110,9 +113,31 @@ header {
 
 main {
     overflow-y: auto;
-    background-color: lightcoral;
+    background-color: #f8f9fa;
+    flex-grow: 1;
 }
 
+/* main top header */
+
+.main-top-header {
+    background-color: #1b72e8;
+    color: white;
+    font-weight: 500;
+}
+
+.top-header-new-student i {
+    width: 15px;
+}
+
+.top-header-plan span {
+    background-color: #165bba;
+    font-weight: normal;
+    font-size: .9rem;
+}
+
+.top-header-count-students span {
+    font-size: 1.9rem;
+}
 
 /* media query */
 
