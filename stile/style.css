@@ -38,9 +38,8 @@ p {
     width: 100%;
 }
 
-
-
 /* Fine Generics */
+
 
 /* Utils */
 
@@ -58,7 +57,11 @@ p {
 
 /* Fine Utils */
 
-/* header */
+
+
+/* -----------------
+        HEADER
+--------------------- */
 
 header {
     background-color: #f8f9fa;
@@ -113,7 +116,9 @@ header {
 }
 
 
-/* fine header */
+/* -----------------
+        FINE HEADER
+--------------------- */
 
 
 
@@ -125,13 +130,30 @@ header {
     background-image: url(../img/sidebar-bg.png);
     background-color: #051e34;
     color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sidebar-icon {
+    padding: .5rem 1.2rem;
+}
+
+.sidebar-icon:hover {
+    background-color: #898f9467;
+}
+
+.sidebar-icon a {
+   text-decoration: none;
+   color: white;
 }
 
 
 /* fine sidebar */
 
 
-/* main */
+/* -----------------
+        MAIN
+--------------------- */
 
 
 main {
@@ -163,7 +185,9 @@ main {
 }
 
 
-/* cards */
+/* -----------------
+        CARDS
+--------------------- */
 
 /* To do card */
 
@@ -206,8 +230,9 @@ main {
 
 
 
-
-/* media query */
+/* -----------------
+       MEDIA QUERY
+--------------------- */
 
 @media screen and (min-width: 992px) {
     .search-bar {
