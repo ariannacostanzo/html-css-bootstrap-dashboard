@@ -8,12 +8,13 @@
 
 /* Generics */
 
-body {
+.body-content {
     overflow: hidden;
+    
 }
 
 .main-division {
-    height: 92vh;
+    height: calc(100vh - 80px);
 }
 
 /* Fine Generics */
@@ -27,7 +28,7 @@ body {
 
 header {
     background-color: red;
-    height: 8vh;
+    height: 80px;
 }
 
 
@@ -41,6 +42,7 @@ header {
 .sidebar {
     flex-shrink: 0;
     background-color: blue;
+    width: 80px;
 }
 
 /* fine sidebar */
