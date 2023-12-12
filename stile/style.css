@@ -186,7 +186,7 @@ main {
 
 /* nuove classi card */
 
-.new-classes-card th {
+.next-classes-card th {
     font-weight: 500;
     color: rgb(43, 43, 43);
 }
@@ -203,7 +203,6 @@ main {
     color: #6c757d ;
 
 }
-
 
 
 /* media query */
