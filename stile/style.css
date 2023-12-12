@@ -95,9 +95,12 @@ header {
 
 .sidebar {
     flex-shrink: 0;
-    background-color: blue;
-    width: 80px;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051e34;
+    color: white;
 }
+
+
 
 /* fine sidebar */
 
@@ -116,5 +119,9 @@ main {
 @media screen and (min-width: 992px) {
     .search-bar {
         padding: .28rem 0;
+    }
+
+    .sidebar i {
+        width: 30px;
     }
 }
