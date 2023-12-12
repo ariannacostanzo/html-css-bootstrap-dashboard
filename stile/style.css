@@ -29,6 +29,17 @@ p {
     margin: 0;
 }
 
+.card-header {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.card {
+    width: 100%;
+}
+
+
+
 /* Fine Generics */
 
 /* Utils */
@@ -138,6 +149,21 @@ main {
 .top-header-count-students span {
     font-size: 1.9rem;
 }
+
+
+/* cards */
+
+/* To do card */
+
+.todo-card input {
+    margin-right: 5px;
+}
+
+
+/* fine to do card */
+
+
+
 
 /* media query */
 
