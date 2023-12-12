@@ -44,6 +44,18 @@ p {
 
 /* Utils */
 
+.bg-done {
+    background-color: #198754;
+}
+
+.bg-process {
+    background-color: #ffc107;
+}
+
+.bg-failed {
+    background-color: #dc3545 ;
+}
+
 /* Fine Utils */
 
 /* header */
@@ -166,6 +178,31 @@ main {
 
 /* fine to do card */
 
+/* utenti attivi card */
+
+.active-user-card p, .active-user-card a{
+    font-size: .9rem;
+}
+
+/* nuove classi card */
+
+.new-classes-card th {
+    font-weight: 500;
+    color: rgb(43, 43, 43);
+}
+
+.next-classes-img {
+    width: 30px;
+    margin-right: 10px;
+    height: 30.5px;
+    display: inline;
+}
+
+.modify-table-row span {
+    border: 1px solid #6c757d ;
+    color: #6c757d ;
+
+}
 
 
 
