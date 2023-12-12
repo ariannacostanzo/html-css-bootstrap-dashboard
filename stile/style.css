@@ -31,7 +31,6 @@ p {
 
 .card-header {
     font-size: 1.7rem;
-    font-weight: 500;
 }
 
 .card {
@@ -157,6 +156,10 @@ main {
 
 .todo-card input {
     margin-right: 5px;
+}
+
+.form-check-input {
+    border-color: rgba(0, 0, 0, 0.176);
 }
 
 
