@@ -108,13 +108,61 @@ header {
 
 .header-right i {
     color: #5b5858;
+    cursor: pointer;
+}
+
+.header-right i:hover {
+    filter: brightness(120%);
 }
 
 
 #orange-bell {
     color: #ff8f00;
+    
 }
 
+#orange-bell:hover {
+    animation: shake 1s linear infinite
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    4% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    8%, 24% {
+        -webkit-transform: rotate(-18deg);
+        transform: rotate(-18deg);
+    }
+    12%, 28% {
+        -webkit-transform: rotate(18deg);
+        transform: rotate(18deg);
+    }
+    16% {
+        -webkit-transform: rotate(-22deg);
+        transform: rotate(-22deg);
+    }
+    20% {
+        -webkit-transform: rotate(22deg);
+        transform: rotate(22deg);
+    }
+    32% {
+        -webkit-transform: rotate(-12deg);
+        transform: rotate(-12deg);
+    }
+    36% {
+        -webkit-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+    40%, 100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
 
 /* -----------------
         FINE HEADER
@@ -178,6 +226,11 @@ main {
     background-color: #165bba;
     font-weight: normal;
     font-size: .9rem;
+    cursor: pointer;
+}
+
+.main-top-header .badge:hover {
+    background-color: #0f3872;
 }
 
 .top-header-count-students span {
