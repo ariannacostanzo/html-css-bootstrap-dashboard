@@ -1,0 +1,54 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+
+body {
+    overflow: hidden;
+}
+
+.main-division {
+    height: 92vh;
+}
+
+/* Fine Generics */
+
+/* Utils */
+
+/* Fine Utils */
+
+/* header */
+
+
+header {
+    background-color: red;
+    height: 8vh;
+}
+
+
+/* fine header */
+
+
+
+/* sidebar */
+
+
+.sidebar {
+    flex-shrink: 0;
+    background-color: blue;
+}
+
+/* fine sidebar */
+
+
+/* main */
+
+
+main {
+    overflow-y: auto;
+}
