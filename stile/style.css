@@ -61,15 +61,15 @@ header {
 }
 
 .search-bar span{
-    padding-left: 10px;
+    padding: 0 10px;
 }
 
 .search-bar input {
-    padding: .6rem;
     border-radius: 5px;
     border: none;
     background-color: #e5e5e5;
 }
+
 .search-bar input:focus-visible {
    outline: none;
 }
@@ -108,4 +108,13 @@ header {
 main {
     overflow-y: auto;
     background-color: lightcoral;
+}
+
+
+/* media query */
+
+@media screen and (min-width: 992px) {
+    .search-bar {
+        padding: .28rem 0;
+    }
 }
