@@ -21,16 +21,21 @@
 
         <!-- header -->
         <header class="position-sticky top-0 start-0 end-0 d-flex align-items-center">
-            <div class="header-content container-fluid w-100 d-flex align-items-center">
+            <div class="header-content container-fluid w-100 d-flex align-items-center gap-4">
                 <div class="header-logo">
                         <img src="img/mobile-logo.png" alt="mobile logo" class="d-lg-none" id="logo-mobile">
                         <img src="img/logo.svg" alt="mobile logo" class="d-none d-lg-block" id="logo-desktop">
                 </div>
-                <div class="header-searchbar flex-grow-1">
-                    searchbar
-                </div>
-                <div class="header-right">
-                    icons
+                    <div class="search-bar flex-grow-1 d-flex align-items-center">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="w-100" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
+                    </div>
+                    
+                <div class="header-right d-flex align-items-center gap-4">
+                    <i class="fa-solid fa-list d-none d-lg-block"></i>
+                    <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
+                    <i id="orange-bell" class="fa-solid fa-bell"></i>
                 </div>
             </div>
         </header>

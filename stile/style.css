@@ -33,16 +33,16 @@ img {
 
 /* header */
 
-
 header {
     background-color: #f8f9fa;
-    height: 80px;
-    
+    height: 80px;   
 }
 
 .header-content {
     background-color: white;
 }
+
+/* header logo */
 
 #logo-mobile {
     width:50px;
@@ -51,6 +51,38 @@ header {
 #logo-desktop {
     width: 140px;
     height: 50px;
+}
+
+/* search bar */
+
+.search-bar {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.search-bar span{
+    padding-left: 10px;
+}
+
+.search-bar input {
+    padding: .6rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #e5e5e5;
+}
+.search-bar input:focus-visible {
+   outline: none;
+}
+
+/* header icons */
+
+.header-right i {
+    color: #5b5858;
+}
+
+
+#orange-bell {
+    color: #ff8f00;
 }
 
 
