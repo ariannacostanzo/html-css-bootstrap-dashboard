@@ -206,7 +206,7 @@ header {
 }
 
 .sidebar-icon:hover {
-    background-color: #898f9467;
+    background-color: #c7ccd167;
 }
 
 .sidebar-icon a {
@@ -309,6 +309,23 @@ main {
     color: #6c757d ;
 
 }
+
+.my-table th:not(:first-child) {
+    text-align: center;
+}
+
+.my-table td:not(:first-child) {
+    text-align: center;
+}
+
+.my-table th:first-child {
+    width: 50%;
+}
+
+.my-table td:first-child {
+    width: 50%;
+}
+
 
 
 
