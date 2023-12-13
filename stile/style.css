@@ -249,6 +249,8 @@ main {
     width: 100%;
 }
 
+
+
 .top-header-plan span {
     background-color: #165bba;
     font-weight: normal;
@@ -264,6 +266,9 @@ main {
     font-size: 1.9rem;
 }
 
+.rounded-pill a {
+    color: white;
+}
 
 
 
