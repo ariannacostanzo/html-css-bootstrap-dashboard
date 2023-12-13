@@ -133,53 +133,24 @@ header {
     display: none;
 }
 
+/* animazione bounce su question mark */
+
+#question-mark:hover {
+    animation: fa-bounce 1s linear infinite
+}
+
 #orange-bell {
     color: #ff8f00;
     
 }
 
+/* animazione shake su bell */
+
 #orange-bell:hover {
-    animation: shake 1s linear infinite
+    animation: fa-shake 1s linear infinite
 }
 
-@keyframes shake {
-    0% {
-        -webkit-transform: rotate(-15deg);
-        transform: rotate(-15deg);
-    }
-    4% {
-        -webkit-transform: rotate(15deg);
-        transform: rotate(15deg);
-    }
-    8%, 24% {
-        -webkit-transform: rotate(-18deg);
-        transform: rotate(-18deg);
-    }
-    12%, 28% {
-        -webkit-transform: rotate(18deg);
-        transform: rotate(18deg);
-    }
-    16% {
-        -webkit-transform: rotate(-22deg);
-        transform: rotate(-22deg);
-    }
-    20% {
-        -webkit-transform: rotate(22deg);
-        transform: rotate(22deg);
-    }
-    32% {
-        -webkit-transform: rotate(-12deg);
-        transform: rotate(-12deg);
-    }
-    36% {
-        -webkit-transform: rotate(12deg);
-        transform: rotate(12deg);
-    }
-    40%, 100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-}
+
 
 /* -----------------
         FINE HEADER
@@ -212,6 +183,22 @@ header {
 .sidebar-icon a {
    text-decoration: none;
    color: white;
+}
+
+#gear {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.sidebar-icon:hover #gear{
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin { 
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(360deg);}
 }
 
 
