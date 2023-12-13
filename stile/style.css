@@ -2,20 +2,14 @@
     --header-height: 80px;
 }
 
-/* css reset */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Generics */
 
-.body-content {
+/* .body-content {
     overflow: hidden;
     
-}
+} */
 
 .main-division {
     height: calc(100vh - var(--header-height));
@@ -65,7 +59,7 @@ p {
 
 header {
     background-color: #f8f9fa;
-    height: 80px;   
+    height: 80px;
 }
 
 .header-content {
@@ -111,9 +105,19 @@ header {
     cursor: pointer;
 }
 
-.header-right i:hover {
-    filter: brightness(120%);
+.header-right i:not(#orange-bell):hover {
+    filter: brightness(150%);
 }
+
+.my-dropdown button{
+    background-color: white;
+    padding: 0;
+}
+
+.my-dropdown .dropdown-toggle::before{
+    display: none;
+}
+
 
 
 #orange-bell {
@@ -222,6 +226,12 @@ main {
     width: 15px;
 }
 
+/* width del canvas */
+
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
+
 .top-header-plan span {
     background-color: #165bba;
     font-weight: normal;
@@ -236,6 +246,8 @@ main {
 .top-header-count-students span {
     font-size: 1.9rem;
 }
+
+
 
 
 /* -----------------
@@ -294,5 +306,9 @@ main {
 
     .sidebar i {
         width: 30px;
+    }
+
+    .offcanvas.offcanvas-end {
+        width: 50%;
     }
 }

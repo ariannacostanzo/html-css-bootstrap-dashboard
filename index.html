@@ -20,7 +20,7 @@
     <div class="body-content">
 
         <!-- header -->
-        <header class="position-sticky top-0 start-0 end-0 d-flex align-items-center">
+        <header class="d-flex align-items-center">
             <div class="header-content container-fluid w-100 d-flex align-items-center gap-4">
                 <div class="header-logo">
                         <img src="img/mobile-logo.png" alt="mobile logo" class="d-lg-none" id="logo-mobile">
@@ -35,7 +35,17 @@
                     <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
                     <!-- qui ci va il dropdown -->
-                    <i id="orange-bell" class="fa-solid fa-bell"></i>
+                    <span class="btn-group dropstart my-dropdown">
+                        <button type="button" class="dropdown-toggle border-0 " data-bs-toggle="dropdown" aria-expanded="false">
+                            <i id="orange-bell" class="fa-solid fa-bell"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                          </ul>
+                    </span>
+                    
                 </div>
             </div>
         </header>
@@ -84,7 +94,62 @@
                 <div class="main-top-header container-fluid d-md-flex pt-2 justify-content-between">
                     <div class="top-header-new-student pt-4 d-flex align-items-baseline order-md-1 ">
                         <p class="pe-4">Nuovo Studente</p>
-                        <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+                        <!-- offcanvas -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <div class="row">
+                                <!-- nome -->
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                                <!-- Cognome -->
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput2" class="form-label">Cognome</label>
+                                        <input type="name" class="form-control" id="exampleFormControlInput2">
+                                    </div>
+                                </div>
+                                <!-- Email -->
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput3" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="email" class="form-control" id="exampleFormControlInput3">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Password -->
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput2" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleFormControlInput2">
+                                    </div>
+                                </div>
+                                <!-- Indirizzo -->
+                                <div class="col-12">indirizzo</div>
+                                <!-- Città -->
+                                <div class="col-12 col-md-6">città</div>
+                                <!-- Stato -->
+                                <div class="col-12 col-md-4">stato</div>
+                                <!-- Cap -->
+                                <div class="col-12 col-md-2">cap</div>
+                                <!-- Foto -->
+                                <div class="col-12">foto</div>
+                                <!-- Checkbox -->
+                                <div class="col-12">checkbox</div>
+                                <!-- Buttons -->
+                              </div>
+                            </div>
+                          </div>
                     </div>
                     <div class="top-header-plan pt-4">
                         <div class="d-flex align-items-baseline gap-2 flex-grow-1">
@@ -109,11 +174,11 @@
 
                 <!-- main cards -->
                 <div class="main-cards container-fluid">
-                    <div class="row  g-4 py-4 ">
-                        <div class="col-12 col-lg-8 order-lg-0 ">
+                    <div class="row g-4 py-4 ">
+                        <div class="col-12 col-lg-8">
 
                             <!-- card Prossime Classi -->
-                            <section class="next-classes-card order-lg-0 mb-4 ">
+                            <section class="next-classes-card mb-4 ">
                                 <div class="card">
                                     <div class="card-header">
                                     Prossime classi
@@ -132,7 +197,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td colspan="2" class="fixing">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 75</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">15 Feb 2021</td>
@@ -147,7 +212,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 76</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">16 Feb 2021</td>
@@ -162,7 +227,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 77</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">17 Feb 2021</td>
@@ -177,7 +242,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 78</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">18 Feb 2021</td>
@@ -192,7 +257,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 79</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">19 Feb 2021</td>
@@ -207,7 +272,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 80</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">20 Feb 2021</td>
@@ -222,7 +287,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 81</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">21 Feb 2021</td>
@@ -237,7 +302,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="2">
-                                                        <img src="img/class-avatar.jpg" alt="icon" class="next-classes-img">
+                                                        <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                         <span class="align-middle">Classe 82</span>
                                                     </td>
                                                     <td class=" d-none d-md-table-cell">22 Feb 2021</td>
@@ -260,7 +325,7 @@
                             <!-- fine card Prossime Classi -->
 
                             <!-- card F.A.Q  -->
-                            <section class="faq-card ">
+                            <section class="faq-card">
                                 <div class="card">
                                     <div class="card-header">
                                     F.A.Q.
@@ -303,10 +368,10 @@
                             </section>
                             <!-- fine card F.A.Q  -->
                         </div>
-                        <div class="col-12 col-lg-4 order-lg-1 pb-4">
+                        <div class="col-12 col-lg-4 pb-4">
 
                             <!-- card Todo -->
-                            <section class="todo-card order-lg-1 mb-4">
+                            <section class="todo-card mb-4">
                                 <div class="card">
                                     <div class="card-header">
                                     Todo
@@ -381,5 +446,5 @@
     </body>
     </html>
 
-    <!-- cose da fixare: il div che si apre premendo la campanella; il div che si apre premendo il + in nuovo studente; effetti on hover; scrollbar; il background dell'immagine embed;
-    fare un'animazione con la campanella che si shaka on hover;  -->
+    <!-- cose da fixare: il div che si apre premendo la campanella dovrebbe essere bottom-left; il div che si apre premendo il + in nuovo studente; effetti on hover; scrollbar; il background dell'immagine embed;
+    fare un'animazione con la campanella che si shaka on hover; rendere la table responsive  -->
