@@ -104,19 +104,19 @@
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                              <form class="row">
+                              <form action="https://marcolanci.it/boolean/read_form.php" class="row">
                                 <!-- nome -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                        <input type="text" class="form-control" name="name" id="exampleFormControlInput1">
                                     </div>
                                 </div>
                                 <!-- Cognome -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput2" class="form-label">Cognome</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput2">
+                                        <input type="text" class="form-control" name="surname" id="exampleFormControlInput2">
                                     </div>
                                 </div>
                                 <!-- Email -->
@@ -125,7 +125,7 @@
                                         <label for="exampleFormControlInput3" class="form-label">Email</label>
                                         <div class="input-group">
                                             <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="email" class="form-control" id="exampleFormControlInput3">
+                                            <input type="email" class="form-control" name="email" id="exampleFormControlInput3">
                                         </div>
                                     </div>
                                 </div>
@@ -133,28 +133,28 @@
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput4" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleFormControlInput4">
+                                        <input type="password" class="form-control" name="password" id="exampleFormControlInput4">
                                     </div>
                                 </div>
                                 <!-- Indirizzo -->
                                 <div class="col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput5" class="form-label">Indirizzo</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput5">
+                                        <input type="text" class="form-control" name="address" id="exampleFormControlInput5">
                                     </div>
                                 </div>
                                 <!-- Città -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput6" class="form-label">Città</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput6">
+                                        <input type="text" class="form-control" name="city" id="exampleFormControlInput6">
                                     </div>
                                 </div>
                                 <!-- Stato -->
                                 <div class="col-12 col-md-4">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput7" class="form-label">Città</label>
-                                        <select class="form-select" id="exampleFormControlInput7" aria-label="Example select with button addon">
+                                        <label for="exampleFormControlInput7" class="form-label">Stato</label>
+                                        <select class="form-select" id="exampleFormControlInput7" name="country" aria-label="Example select with button addon">
                                           <option selected>Scegli...</option>
                                           <option value="1">Italia</option>
                                           <option value="2">Germania</option>
@@ -166,14 +166,14 @@
                                 <div class="col-12 col-md-2">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput8" class="form-label">CAP</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput8">
+                                        <input type="text" class="form-control" name="cap" id="exampleFormControlInput8">
                                     </div>
                                 </div>
                                 <!-- Foto -->
                                 <div class="col-12">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput9" class="form-label">Foto</label>
-                                        <input type="file" class="form-control" id="exampleFormControlInput9" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                        <input type="file" class="form-control" name="picture" id="exampleFormControlInput9" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                                     </div>
                                 </div>
                                 <!-- Checkbox -->
@@ -553,7 +553,7 @@
             const toastTrigger2 = document.getElementById('liveToastBtn2')
             const toastTrigger3 = document.getElementById('liveToastBtn3')
 
-            // se voglio che i toast appaiano uno sotto l'altro posso attivare questi sotto
+            // se voglio che i toast appaiano uno sotto l'altro invece che sempre sulla stessa posizione posso attivare questi sotto
             // const toastLiveExample2 = document.getElementById('liveToast2')
             // const toastLiveExample3 = document.getElementById('liveToast3')
             const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
