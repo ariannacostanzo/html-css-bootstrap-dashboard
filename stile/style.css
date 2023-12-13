@@ -43,6 +43,29 @@ p {
     background-color: #dc3545 ;
 }
 
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #051e34;
+}
+
 /* Fine Utils */
 
 /* -----------------
