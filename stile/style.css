@@ -281,7 +281,9 @@ main {
     border-color: rgba(0, 0, 0, 0.176);
 }
 
-
+.todo-card img {
+    width: 30px;
+}
 /* fine to do card */
 
 /* utenti attivi card */
