@@ -313,6 +313,10 @@ main {
     font-size: .9rem;
 }
 
+.modal-header {
+    border-bottom: 0;
+}
+
 /* nuove classi card */
 
 .next-classes-card th {
