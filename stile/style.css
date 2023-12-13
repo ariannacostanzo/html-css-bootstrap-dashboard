@@ -124,7 +124,7 @@ header {
     filter: brightness(150%);
 }
 
-.my-dropdown button{
+.header-right button{
     background-color: white;
     padding: 0;
 }

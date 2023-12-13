@@ -34,7 +34,9 @@
                 </div>
                 <div class="header-right d-flex align-items-center gap-4">
                     <i class="fa-solid fa-list d-none d-lg-block"></i>
-                    <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+                    <button type="button" class="border-0" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Per maggiori informazioni visita il nostro sito web">
+                        <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
+                    </button>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
                     <!-- qui ci va il dropdown -->
                     <div class="btn-group dropstart my-dropdown" >
@@ -586,6 +588,10 @@
                     $(".toggle-span").fadeToggle(500);
                 });
             });
+        </script>
+        <script>
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
         </script>
     </body>
     </html>
