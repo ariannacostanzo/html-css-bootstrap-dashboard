@@ -37,7 +37,7 @@
                     <i class="fa-solid fa-circle-question d-none d-lg-block"></i>
                     <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
                     <!-- qui ci va il dropdown -->
-                    <span class="btn-group dropstart my-dropdown" >
+                    <div class="btn-group dropstart my-dropdown" >
                         <button type="button" class="dropdown-toggle border-0 " data-bs-offset="15,0" data-bs-toggle="dropdown" aria-expanded="false">
                             <i id="orange-bell" class="fa-solid fa-bell"></i>
                           </button>
@@ -46,7 +46,7 @@
                             <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                           </ul>
-                    </span>
+                    </div>
                     
                 </div>
             </div>
@@ -109,14 +109,14 @@
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput1">
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
                                     </div>
                                 </div>
                                 <!-- Cognome -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
                                         <label for="exampleFormControlInput2" class="form-label">Cognome</label>
-                                        <input type="name" class="form-control" id="exampleFormControlInput2">
+                                        <input type="text" class="form-control" id="exampleFormControlInput2">
                                     </div>
                                 </div>
                                 <!-- Email -->
@@ -239,14 +239,14 @@
                             <section class="next-classes-card mb-4 ">
                                 <div class="card">
                                     <div class="card-header">
-                                    Prossime classi
+                                    <h2>Prossime classi </h2>
                                     </div>
                                     <div class="p-3">
                                         <div class="table-responsive">
                                             <table class="table table-hover my-table">
                                                 <thead>
                                                     <tr>
-                                                        <th colspan="2" scope="col">Nome </th>
+                                                        <th scope="col">Nome </th>
                                                         <th class="d-none d-md-table-cell" scope="col">Data Inizio </th>
                                                         <th class="d-none d-md-table-cell " scope="col">ROI </th>
                                                         <th scope="col">Stato</th>
@@ -255,7 +255,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td colspan="2" class="fixing">
+                                                        <td class="fixing">
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 75</span>
                                                         </td>
@@ -270,7 +270,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 76</span>
                                                         </td>
@@ -285,7 +285,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 77</span>
                                                         </td>
@@ -300,7 +300,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 78</span>
                                                         </td>
@@ -315,7 +315,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 79</span>
                                                         </td>
@@ -330,7 +330,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 80</span>
                                                         </td>
@@ -345,7 +345,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 81</span>
                                                         </td>
@@ -360,7 +360,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="2">
+                                                        <td>
                                                             <img src="img/class-avatar.png" alt="icon" class="next-classes-img">
                                                             <span class="align-middle">Classe 82</span>
                                                         </td>
@@ -388,7 +388,7 @@
                             <section class="faq-card">
                                 <div class="card">
                                     <div class="card-header">
-                                    F.A.Q.
+                                    <h2>F.A.Q. </h2>
                                     </div>
                                     <div class="card-body">
                                         <div class="accordion accordion-flush " id="accordionFlushExample">
@@ -435,7 +435,7 @@
                             <section class="todo-card mb-4">
                                 <div class="card">
                                     <div class="card-header">
-                                    Todo
+                                    <h2>Todo </h2>
                                     </div>
                                     <div class="card-body">
                                         <ul class="list-group list-group-flush">
@@ -451,47 +451,48 @@
                                                 <input class="form-check-input" type="checkbox" value="" id="liveToastBtn3">
                                                 Controllare username github studenti
                                             </li>
-                                            <!-- toast -->
-                                            <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                                                <!-- primo toast -->
-                                                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                                    <div class="toast-header">
-                                                        <img src="img/mobile-logo.png" class="rounded me-2" alt="...">
-                                                        <strong class="me-auto">Bootstrap</strong>
-                                                        <small>1 second ago</small>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="toast-body">
-                                                        Lista aggiornata!
-                                                    </div>
-                                                </div>
-                                                <!-- secondo toast -->
-                                                    <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                                      <div class="toast-header">
-                                                        <img src="img/mobile-logo.png" class="rounded me-2" alt="...">
-                                                        <strong class="me-auto">Bootstrap</strong>
-                                                        <small>1 second ago</small>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                                      </div>
-                                                      <div class="toast-body">
-                                                        Lista aggiornata!
-                                                      </div>
-                                                    </div>
-                                                <!-- terzo toast -->
-                                                    <div id="liveToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                                                      <div class="toast-header">
-                                                        <img src="img/mobile-logo.png" class="rounded me-2" alt="...">
-                                                        <strong class="me-auto">Bootstrap</strong>
-                                                        <small>1 second ago</small>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                                                      </div>
-                                                      <div class="toast-body">
-                                                        Lista aggiornata!
-                                                      </div>
-                                                    </div>
-                                            </div>
-                                            <!-- fine toast -->
                                         </ul>
+                                        <!-- toast -->
+                                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                            <!-- primo toast -->
+                                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                <div class="toast-header">
+                                                    <img src="img/mobile-logo.png" class="rounded me-2" alt="...">
+                                                    <strong class="me-auto">Bootstrap</strong>
+                                                    <small>Adesso</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                </div>
+                                                <div class="toast-body">
+                                                    Lista aggiornata!
+                                                </div>
+                                            </div>
+                                            <!-- da attivare con lo script sotto se voglio che i toast appaiano uno sopra l'altro invece che sempre sulla stessa posizione -->
+                                            <!-- secondo toast -->
+                                                <!-- <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                  <div class="toast-header">
+                                                    <img src="img/mobile-logo.png" class="rounded me-2" alt="...">
+                                                    <strong class="me-auto">Bootstrap</strong>
+                                                    <small>Adesso</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Lista aggiornata!
+                                                  </div>
+                                                </div> -->
+                                            <!-- terzo toast -->
+                                                <!-- <div id="liveToast3" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                                  <div class="toast-header">
+                                                    <img src="img/mobile-logo.png" class="rounded me-2" alt="...">
+                                                    <strong class="me-auto">Bootstrap</strong>
+                                                    <small>Adesso</small>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="toast-body">
+                                                    Lista aggiornata!
+                                                  </div>
+                                                </div> -->
+                                        </div>
+                                        <!-- fine toast -->
                                     </div>
                                 </div>
                             </section>
@@ -547,36 +548,38 @@
         <!-- bootstraap script -->
         <!-- toast script -->
         <script>
-            const toastTrigger = document.getElementById('liveToastBtn')
             const toastLiveExample = document.getElementById('liveToast')
+            const toastTrigger = document.getElementById('liveToastBtn')
             const toastTrigger2 = document.getElementById('liveToastBtn2')
-            const toastLiveExample2 = document.getElementById('liveToast2')
             const toastTrigger3 = document.getElementById('liveToastBtn3')
-            const toastLiveExample3 = document.getElementById('liveToast3')
-            
+
+            // se voglio che i toast appaiano uno sotto l'altro posso attivare questi sotto
+            // const toastLiveExample2 = document.getElementById('liveToast2')
+            // const toastLiveExample3 = document.getElementById('liveToast3')
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
             
             if (toastTrigger) {
-            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
             toastTrigger.addEventListener('click', () => {
                 toastBootstrap.show()
             })
             }
+            
             if (toastTrigger2) {
-            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample2)
+            // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample2)
             toastTrigger2.addEventListener('click', () => {
                 toastBootstrap.show()
             })
             }
             if (toastTrigger3) {
-            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample3)
+            // const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample3)
             toastTrigger3.addEventListener('click', () => {
                 toastBootstrap.show()
             })
             }
         </script>
         <!-- fine toast script -->
-        <!-- far apparire gli span premendo la + -->
-        
+        <!-- far apparire gli span premendo la + nell'header blu -->
         <script>
             $(document).ready(function(){
                 $("#toggle").click(function(){
