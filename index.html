@@ -102,7 +102,7 @@
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                              <div class="row">
+                              <form class="row">
                                 <!-- nome -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
@@ -130,24 +130,65 @@
                                 <!-- Password -->
                                 <div class="col-12 col-md-6">
                                     <div class="mb-3">
-                                        <label for="exampleFormControlInput2" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleFormControlInput2">
+                                        <label for="exampleFormControlInput4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleFormControlInput4">
                                     </div>
                                 </div>
                                 <!-- Indirizzo -->
-                                <div class="col-12">indirizzo</div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput5" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput5">
+                                    </div>
+                                </div>
                                 <!-- Città -->
-                                <div class="col-12 col-md-6">città</div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput6" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput6">
+                                    </div>
+                                </div>
                                 <!-- Stato -->
-                                <div class="col-12 col-md-4">stato</div>
+                                <div class="col-12 col-md-4">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput7" class="form-label">Città</label>
+                                        <select class="form-select" id="exampleFormControlInput7" aria-label="Example select with button addon">
+                                          <option selected>Scegli...</option>
+                                          <option value="1">Italia</option>
+                                          <option value="2">Germania</option>
+                                          <option value="3">Spagna</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <!-- Cap -->
-                                <div class="col-12 col-md-2">cap</div>
+                                <div class="col-12 col-md-2">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput8" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput8">
+                                    </div>
+                                </div>
                                 <!-- Foto -->
-                                <div class="col-12">foto</div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput9" class="form-label">Foto</label>
+                                        <input type="file" class="form-control" id="exampleFormControlInput9" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                    </div>
+                                </div>
                                 <!-- Checkbox -->
-                                <div class="col-12">checkbox</div>
+                                <div class="col-12">
+                                    <div class="form-check pt-3 fw-normal mb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Seleziona per proseguire
+                                        </label>
+                                    </div>
+                                </div>
                                 <!-- Buttons -->
-                              </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary mb-3">Salva</button>
+                                    <button type="reset" class="btn btn-warning mb-3">Svuota</button>
+                                </div>
+                              </form>
                             </div>
                           </div>
                     </div>
