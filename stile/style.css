@@ -26,6 +26,7 @@ section h2 {
     width: 100%;
 }
 
+
 /* Fine Generics */
 
 
@@ -43,7 +44,9 @@ section h2 {
     background-color: #dc3545 ;
 }
 
+
 /* Scrollbar */
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -66,11 +69,15 @@ section h2 {
     background: #051e34;
 }
 
+
 /* Fine Utils */
+
+
 
 /* -----------------
         HEADER
 --------------------- */
+
 
 header {
     background-color: #f8f9fa;
@@ -81,7 +88,9 @@ header {
     background-color: white;
 }
 
+
 /* header logo */
+
 
 #logo-mobile {
     width:50px;
@@ -92,7 +101,9 @@ header {
     height: 50px;
 }
 
+
 /* search bar */
+
 
 .search-bar {
     background-color: #e5e5e5;
@@ -113,7 +124,9 @@ header {
    outline: none;
 }
 
+
 /* header icons */
+
 
 .header-right i {
     color: #5b5858;
@@ -133,7 +146,9 @@ header {
     display: none;
 }
 
+
 /* animazione bounce su question mark */
+
 
 #question-mark:hover {
     animation: fa-bounce 1s linear infinite
@@ -144,12 +159,13 @@ header {
     
 }
 
+
 /* animazione shake su bell */
+
 
 #orange-bell:hover {
     animation: fa-shake 1s linear infinite
 }
-
 
 
 /* -----------------
@@ -209,16 +225,15 @@ header {
     color: #b81818;
 }
 
-
-
-
 #gear {
     width: 15px;
     height: 15px;
     margin-right: 5px;
 }
 
+
 /* animazione */
+
 
 .sidebar-icon:hover #gear{
     animation: spin 4s linear infinite;
@@ -265,8 +280,6 @@ main {
     width: 100%;
 }
 
-
-
 .top-header-plan span {
     background-color: #165bba;
     font-weight: normal;
@@ -286,8 +299,6 @@ main {
     color: white;
 }
 
-
-
 /* -----------------
         CARDS
 --------------------- */
@@ -305,9 +316,13 @@ main {
 .todo-card img {
     width: 30px;
 }
+
+
 /* fine to do card */
 
+
 /* utenti attivi card */
+
 
 .active-user-card p, .active-user-card a{
     font-size: .9rem;
@@ -317,7 +332,9 @@ main {
     border-bottom: 0;
 }
 
+
 /* nuove classi card */
+
 
 .next-classes-card th {
     font-weight: 500;
@@ -347,11 +364,10 @@ main {
 }
 
 
-
-
 /* -----------------
        MEDIA QUERY
 --------------------- */
+
 
 @media screen and (min-width: 992px) {
     .search-bar {
@@ -370,6 +386,7 @@ main {
         width: 35%;
     }
 }
+
 
 @media screen and (min-width:1200px) {
     .my-table th:first-child, .my-table td:first-child {

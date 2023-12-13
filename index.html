@@ -33,6 +33,7 @@
                     <input class="w-100 py-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
                 </div>
                 <div class="header-right d-flex align-items-center gap-4">
+                     <!--dropdown -->
                     <div class="btn-group dropstart my-dropdown" >
                         <button type="button" class="dropdown-toggle border-0 " data-bs-offset="15,0" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-list d-none d-lg-block"></i>
@@ -40,12 +41,16 @@
                           <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Blog</a></li>
                             <li><a class="dropdown-item" href="#">Novità</a></li>
+                            <li><a class="dropdown-item" href="#">Documentazione</a></li>
+                            <li><a class="dropdown-item" href="#">Su di noi</a></li>
                           </ul>
                     </div>
                     
+                    <!-- tooltip -->
                     <button type="button" class="border-0" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Per maggiori informazioni visita il nostro sito web">
                         <i class="fa-solid fa-circle-question d-none d-lg-block" id="question-mark"></i>
                     </button>
+                     <!--dropdown -->
                     <div class="btn-group dropstart my-dropdown" >
                         <button type="button" class="dropdown-toggle border-0 " data-bs-offset="15,0" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block"></i>
@@ -56,7 +61,7 @@
                           </ul>
                     </div>
                     
-                    <!-- qui ci va il dropdown -->
+                    <!--dropdown -->
                     <div class="btn-group dropstart my-dropdown" >
                         <button type="button" class="dropdown-toggle border-0 " data-bs-offset="15,0" data-bs-toggle="dropdown" aria-expanded="false">
                             <i id="orange-bell" class="fa-solid fa-bell"></i>
@@ -212,9 +217,9 @@
                                 </div>
                               </form>
                             </div>
-                          </div>
+                        </div>
+                        <!-- fine offcanvas -->
                     </div>
-                    <!-- fine offcanvas -->
 
                     <div class="top-header-plan pt-4">
                         <div class="d-flex align-items-baseline gap-2 flex-grow-1">
@@ -696,6 +701,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <!-- bootstraap script -->
+
         <!-- toast script -->
         <script>
             const toastLiveExample = document.getElementById('liveToast')
@@ -729,6 +735,7 @@
             }
         </script>
         <!-- fine toast script -->
+
         <!-- far apparire gli span premendo la + nell'header blu -->
         <script>
             $(document).ready(function(){
@@ -737,10 +744,15 @@
                 });
             });
         </script>
+        <!-- fine toggle -->
+
+        <!-- tooltip -->
         <script>
             const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
             const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
         </script>
+         <!-- fine tooltip -->
+
     </body>
     </html>
     <!-- tooltip su punto interrogativo -->
