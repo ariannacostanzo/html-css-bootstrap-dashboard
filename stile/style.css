@@ -310,19 +310,12 @@ main {
 
 }
 
-.my-table th:not(:first-child) {
+.my-table th:not(:first-child), .my-table td:not(:first-child) {
     text-align: center;
 }
 
-.my-table td:not(:first-child) {
-    text-align: center;
-}
 
-.my-table th:first-child {
-    width: 50%;
-}
-
-.my-table td:first-child {
+.my-table th:first-child, .my-table td:first-child {
     width: 50%;
 }
 
