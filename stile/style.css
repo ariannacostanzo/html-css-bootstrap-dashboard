@@ -185,11 +185,40 @@ header {
    color: white;
 }
 
+#house{
+    transition: color .1s ease-in;
+}
+
+.sidebar-icon:hover #house {
+    color: #0eaa23;
+}
+
+#chart {
+    transition: color .5s ease-in;
+}
+
+.sidebar-icon:hover #chart {
+    color: #d3991d;
+}
+
+#signal {
+    transition: color .5s ease-in;
+}
+
+.sidebar-icon:hover #signal {
+    color: #b81818;
+}
+
+
+
+
 #gear {
     width: 15px;
     height: 15px;
     margin-right: 5px;
 }
+
+/* animazione */
 
 .sidebar-icon:hover #gear{
     animation: spin 4s linear infinite;
