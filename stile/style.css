@@ -2,14 +2,8 @@
     --header-height: 80px;
 }
 
-
-
 /* Generics */
 
-/* .body-content {
-    overflow: hidden;
-    
-} */
 
 .main-division {
     height: calc(100vh - var(--header-height));
@@ -50,8 +44,6 @@ p {
 }
 
 /* Fine Utils */
-
-
 
 /* -----------------
         HEADER
@@ -118,8 +110,6 @@ header {
     display: none;
 }
 
-
-
 #orange-bell {
     color: #ff8f00;
     
@@ -174,7 +164,9 @@ header {
 
 
 
-/* sidebar */
+/* -----------------
+       SIDEBAR
+--------------------- */
 
 
 .sidebar {
@@ -200,7 +192,9 @@ header {
 }
 
 
-/* fine sidebar */
+/* -----------------
+       FINE SIDEBAR
+--------------------- */
 
 
 /* -----------------
